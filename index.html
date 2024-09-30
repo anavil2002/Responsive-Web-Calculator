@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section class="CalcContainer">
+        <div class="display">
+            <h1 id="inputValue" onClick="handleInteraction()">0</h1>
+        </div>
+        <div class="btnsContainer">
+            <div class="btnRow smRow">
+                <button onClick="handleInteraction('(')" class="btn">
+                    <p>(</p>
+                </button>
+                <button onClick="handleInteraction(')')" class="btn">
+                    <p>)</p>
+                </button>
+                <button onClick="handleInteraction('%')" class="btn">
+                    <p>%</p>
+                </button>
+                <button onClick="handleReset()" class="btn">
+                    <p>AC</p>
+                </button>
+            </div>
+            <div class="btnRow">
+                <button onClick="handleInteraction(7)" class="btn">
+                    <p>7</p>
+                </button>
+                <button onClick="handleInteraction(8)" class="btn">
+                    <p>8</p>
+                </button>
+                <button onClick="handleInteraction(9)" class="btn">
+                    <p>9</p>
+                </button>
+                <button onClick="handleInteraction('/')" class="btn">
+                    <p>/</p>
+                </button>
+            </div>
+            <div class="btnRow">
+                <button onClick="handleInteraction(4)" class="btn">
+                    <p>4</p>
+                </button>
+                <button onClick="handleInteraction(5)" class="btn">
+                    <p>5</p>
+                </button>
+                <button onClick="handleInteraction(6)" class="btn">
+                    <p>6</p>
+                </button>
+                <button onClick="handleInteraction('*')" class="btn">
+                    <p>*</p>
+                </button>
+            </div>
+            <div class="btnRow">
+                <button onClick="handleInteraction(1)" class="btn">
+                    <p>1</p>
+                </button>
+                <button onClick="handleInteraction(2)" class="btn">
+                    <p>2</p>
+                </button>
+                <button onClick="handleInteraction(3)" class="btn">
+                    <p>3</p>
+                </button>
+                <button onClick="handleInteraction('-')" class="btn">
+                    <p>-</p>
+                </button>
+            </div>
+            <div class="btnRow">
+                <button onClick="handleInteraction(0)" class="btn">
+                    <p>0</p>
+                </button>
+                <button onClick="handleInteraction('.')" class="btn">
+                    <p>.</p>
+                </button>
+                <button onClick="handleEvaluate()" class="btn">
+                    <p>=</p>
+                </button>
+                <button onClick="handleInteraction('+')" class="btn">
+                    <p>+</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+    <script src="index.js"></script>
+
+</html>
